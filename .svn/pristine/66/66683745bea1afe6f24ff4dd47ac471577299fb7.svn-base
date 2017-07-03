@@ -1,0 +1,72 @@
+.banner{
+    width: 100%;
+    height: 480px;
+    background: url("/images/homepage/topbg.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    width: 100%;
+    height: 1500px;
+    background: white;
+}
+
+.aboutUsContent{
+    width: 1000px;
+    position: relative;
+    top:-311px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border: 1px solid grey;
+    overflow-x: hidden;
+}
+
+
+.aboutUsPart{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.aboutUsPTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.aboutUsPIntro{
+    width: 795px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    margin-top: 30px;
+}
+
+.aboutUsMember{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.memberPhoto{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    width: 313px;
+    height: 198px;
+    background: #d8d8d8;
+}
+
+.aboutUsNewsP{
+    float: left;
+    width: 480px;
+    height: 202px;
+    margin:0 10px;
+    padding: 20px;
+    border:1px solid #888888;
+    box-sizing: border-box;
+}

@@ -1,0 +1,42 @@
+/*** Created by jserk on 2017/5/5.*/
+$(function () {
+    aboutUs.init();
+});
+
+var aboutUs=function () {
+    var aboutUs={};
+
+    aboutUs.init=function () {
+      $(".navHeader").addClass('light');
+      $(".logoDark").show();
+      $(".logoLight").hide();
+
+        //正式
+        var qrcode_app_id='wxd3ab22331c3b1470';
+        var qrcode_redirect_url='https://admin.xiaoe-tech.com/codeinfo';
+        var qrcode_href='https://admin.inside.xiaoe-tech.com/css/external/wechatCode.css';
+
+
+        //生成二维码
+        try {
+            var obj = new WxLogin({
+                id: "m_IndexQrCode",
+                appid: qrcode_app_id,
+                scope: "snsapi_login",
+                redirect_uri: encodeURI(qrcode_redirect_url + "?version_type=null"),
+                state: "",
+                style: "black",
+                href: qrcode_href
+            });
+            console.log(qrcode_redirect_url + "?version_type=null");
+        } catch (ex) {
+            console.error(ex);
+        }
+        
+        $(".moreNews").click(function () {
+            $(".newsMorePart").show();
+        })
+    }
+
+    return aboutUs;
+}();

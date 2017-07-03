@@ -1,0 +1,47 @@
+/**
+ * Created by jserk on 2017/5/5.
+ */
+$(function () {
+    pageBase.init();
+});
+
+var navId = '';
+
+var pageBase = function () {
+    var pageBase = {};
+
+    pageBase.init = function () {
+
+
+
+        $(".wxIcon").mouseenter(function () {
+            $(".wxQrcodeBox").show();
+        });
+
+        $(".wxIcon").mouseleave(function () {
+            $(".wxQrcodeBox").hide();
+        });
+
+        $(".loginMLink").click(function () {
+            window.location = 'http://console.xiaoe-tech.com/manage_index';
+        });
+
+        $(".loginLink").click(function () {
+            window.location = 'https://admin.xiaoe-tech.com/login?version_type=1';
+        });
+
+        $(".experienceLink").click(function () {
+                window.location = 'https://admin.xiaoe-tech.com/login?type=1&version_type=1';
+           });
+
+        $(".versionSelectNav").click(function () {
+            window.location.href = '/homepage_charge';
+        });
+
+        $(".weiboIcon").click(function () {
+            window.open('http://weibo.com/xiaoetong?refer_flag=1001030102_&is_hot=1');
+        })
+    };
+
+    return pageBase;
+}();

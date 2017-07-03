@@ -1,0 +1,16 @@
+/*** Created by jserk on 2017/5/5.*/
+$(function () {
+    aboutUs.init();
+});
+
+var aboutUs=function () {
+    var aboutUs={};
+
+    aboutUs.init=function () {
+      $(".navHeader").addClass('light');
+      $(".logoDark").show();
+      $(".logoLight").hide();
+    }
+
+    return aboutUs;
+}();

@@ -1,0 +1,64 @@
+@extends('admin.baseLayOut')
+@section('page_css')
+    <link type=text/css rel="stylesheet" href="../css/admin/aboutUs.css">
+@endsection
+@section('page_js')
+    <script type="text/javascript" src="../js/admin/aboutUs.js"></script>
+@endsection
+@section('mainContent')
+    <div class="banner">
+    </div>
+    <div class="content">
+        <div class="aboutUsContent">
+            <div class="aboutUsPart">
+                <div class="aboutUsPTitle">关于我们</div>
+                <div class="aboutUsPIntro">
+                    <p>Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it
+                        causes anxiety for several different reasons.</p>
+                    How many people will be asking questions? From experience I can tell you there’s nothing
+                    like walking into a room and seeing nine people on the other side of the table. Second,
+                    what
+                    will you be asked? You’ll sometimes hear people say the questions they were asked in a
+                    technical interview were “easy”, which translated means “they asked me stuff I happened
+                    to
+                    know”. Sometimes you’ll hear people say the questions were “hard”, which translated
+                    means
+                    “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard
+                    of”.
+                    Having been on both sides of the technical interview table, I’d like to share some tips
+                    for
+                    those being interviewed. In doing so, I’ll share some of the more memorable interviews
+                    I’ve
+                    been involved in.
+                    No good interviewer expects you to know everything.
+                </div>
+            </div>
+            <div class="aboutUsPart">
+                <div class="aboutUsPTitle">加入我们</div>
+                <div class="aboutUsPIntro">
+                    <p>Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it
+                        causes anxiety for several different reasons.</p>
+                </div>
+                <div class="aboutUsMember">
+                    <div class="memberPhoto"></div>
+                    <div class="memberPhoto"></div>
+                    <div class="memberPhoto" style="margin-right: 0;"></div>
+                    <div class="memberPhoto"></div>
+                    <div class="memberPhoto"></div>
+                    <div class="memberPhoto" style="margin-right: 0;"></div>
+                </div>
+            </div>
+            <div class="aboutUsPart">
+                <div class="aboutUsPTitle">媒体报道</div>
+                <div class="aboutUsNews">
+                    <div class="aboutUsNewsP">
+                        <div></div>
+                    </div>
+                    <div class="aboutUsNewsP"></div>
+                    <div class="aboutUsNewsP"></div>
+                    <div class="aboutUsNewsP"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
